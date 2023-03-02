@@ -8,7 +8,8 @@ const app = express();
 
 app.get("/", (req, res) => {
   console.log(process.env.NOMBRE);
-  res.sendFile(path.join(__dirname, "./public/index.html"));
+  //res.sendFile(path.join(__dirname, "./public/index.html"));
+  res.send("Hola bienvenidos a mi pagina :)");
 });
 
 app.listen(process.env.PORT || 3000, () => {
